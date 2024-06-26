@@ -14,4 +14,6 @@
 - (BOOL)isMuted;
 - (void)playerRateDidChange:(float)rate;
 - (void)setMuted:(BOOL)muted;
+- (float)playbackRate;
+- (void)setPlaybackRate:(float)arg1;
 @end

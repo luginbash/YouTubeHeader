@@ -10,8 +10,11 @@
 @property (nonatomic, strong, readwrite) id <YTPlayerBarProtocol> segmentablePlayerBar; // Replaced by modularPlayerBar in newer 19.22.3+
 @property (nonatomic, strong, readwrite) YTModularPlayerBarController *modularPlayerBar;
 @property (nonatomic, strong, readwrite) UIView *multiFeedElementView;
+@property (nonatomic, strong, readwrite) YTLabel *currentTimeLabel; // Required for the following tweak: YouTimeStamp
 @property (nonatomic, strong, readwrite) YTLabel *durationLabel;
+@property (nonatomic, assign, readwrite) BOOL canShowFullscreenButton;
 @property (nonatomic, assign, readwrite) BOOL showOnlyFullscreenButton;
+@property (nonatomic, assign, readwrite) BOOL fullscreenButtonDisabled;
 @property (nonatomic, assign, readwrite) int layout;
 @property (nonatomic, weak, readwrite) id delegate;
 - (YTQTMButton *)exitFullscreenButton;

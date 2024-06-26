@@ -8,5 +8,5 @@
 - (id <YTVideoPlayerOverlayDelegate>)delegate;
 - (void)didPressVideoQuality:(id)arg;
 - (BOOL)isFullscreen;
-- (CGFloat)totalTime;
+- (CGFloat)totalTime; // YTTapToSeek - https://github.com/bhackel/YTTapToSeek
 @end
