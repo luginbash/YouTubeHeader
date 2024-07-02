@@ -9,5 +9,5 @@
 + (instancetype)textButton;
 @property (nonatomic, assign, readwrite) BOOL sizeWithPaddingAndInsets;
 - (UILabel *)titleLabel;
-- (void)enableNewTouchFeedback;
+- (void)enableNewTouchFeedback; // Deprecated
 @end
