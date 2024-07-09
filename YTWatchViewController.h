@@ -6,4 +6,5 @@
 @property (nonatomic, weak, readwrite) YTPlayerViewController *playerViewController;
 @property (nonatomic, strong, readwrite) YTWatchPullToFullController *pullToFullController;
 - (NSUInteger)allowedFullScreenOrientations;
+- (BOOL)fullscreen;
 @end
