@@ -3,4 +3,5 @@
 @interface MLPlayerStickySettings : NSObject
 @property (nonatomic, assign, readwrite) float rate;
 @property (nonatomic, assign, readwrite) int videoQualitySetting;
+- (id)initWithTitle:(id)title rate:(float)rate;
 @end
