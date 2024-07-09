@@ -2,4 +2,5 @@
 
 @interface YTIIcon : GPBMessage
 @property (nonatomic, assign, readwrite) int iconType;
+- (BOOL)hasIconType;
 @end
