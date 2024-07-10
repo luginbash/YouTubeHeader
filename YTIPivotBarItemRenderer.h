@@ -1,4 +1,5 @@
 #import "YTICommand.h"
+#import "YTIIcon.h"
 
 @interface YTIPivotBarItemRenderer : NSObject
 @property (nonatomic, retain) YTIIcon *icon;
