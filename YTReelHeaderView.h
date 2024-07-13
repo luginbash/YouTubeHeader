@@ -17,4 +17,5 @@
 - (void)setDelegate:(id<YTReelHeaderDelegate>)delegate;
 - (void)didPressVideoQuality:(id)arg;
 - (YTQTMButton *)buttonWithImage:(UIImage *)image accessibilityLabel:(NSString *)accessibilityLabel verticalContentPadding:(CGFloat)verticalContentPadding;
+- (YTQTMButton *)createButton:(NSString *)tweakId accessibilityLabel:(NSString *)accessibilityLabel selector:(SEL)selector;
 @end
