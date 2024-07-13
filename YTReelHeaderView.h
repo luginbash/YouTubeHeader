@@ -8,7 +8,8 @@
 @property (nonatomic, strong) id<YTReelHeaderDelegate> delegate;
 @property (nonatomic, strong) YTReelTransparentStackView *leftStackView;
 @property (nonatomic, strong) YTReelTransparentStackView *rightStackView;
-@property (nonatomic, strong) YTReelPlayerButton *qualityButton; // Tweak: YouQuality
+@property (nonatomic, strong) YTReelPlayerButton *qualityButton;
+@property (nonatomic, strong) YTQTMButton *qualityButton;
 - (void)addView:(id)view toStackView:(id)stackView withSize:(CGSize)size;
 - (void)addLeftStackView:(id)view toView:(id)parentView;
 - (void)addRightStackView:(id)view toView:(id)parentView;
