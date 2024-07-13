@@ -1,5 +1,4 @@
-#import <UIKit/UIKit.h>
-#import "YTReelHeaderView.h"
+#import "YTQTMButton.h"
 
 @interface YTReelPlayerButton : YTQTMButton
 @property (nonatomic, assign, readwrite) NSInteger buttonAlignment;
