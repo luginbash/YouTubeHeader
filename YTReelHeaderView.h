@@ -1,11 +1,10 @@
 #import <UIKit/UIKit.h>
-#import "YTResponder.h"
-#import "YTReelHeaderDelegate.h"
+#import "YTReelPlayerViewController.h"
 #import "YTReelTransparentStackView.h"
 #import "YTReelPlayerButton.h"
 #import "YTQTMButton.h"
 
-@interface YTReelHeaderView : UIView <YTResponder>
+@interface YTReelHeaderView : UIView
 @property (nonatomic, strong) id<YTReelHeaderDelegate> delegate;
 @property (nonatomic, strong) YTReelTransparentStackView *leftStackView;
 @property (nonatomic, strong) YTReelTransparentStackView *rightStackView;
