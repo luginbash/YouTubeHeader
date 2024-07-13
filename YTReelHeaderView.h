@@ -3,6 +3,7 @@
 #import "YTReelHeaderDelegate.h"
 #import "YTReelTransparentStackView.h"
 #import "YTReelPlayerButton.h"
+#import "YTQTMButton.h"
 
 @interface YTReelHeaderView : UIView <YTResponder>
 @property (nonatomic, strong) id<YTReelHeaderDelegate> delegate;
