@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "YTReelHeaderView.h"
 
-@interface YTReelPlayerButton : UIButton
+@interface YTReelPlayerButton : YTQTMButton
 @property (nonatomic, assign, readwrite) NSInteger buttonAlignment;
 @property (nonatomic, assign, readwrite) BOOL applyRightSideLayoutImageSize;
 @property (nonatomic, assign, readwrite) CGFloat hitTargetInsets;
