@@ -1,13 +1,16 @@
 #import <Foundation/Foundation.h>
 #import "GPBBootstrap.h"
+#import "GPBCodedInputStream.h"
+#import "GPBCodedOutputStream.h"
+#import "GPBDescriptor.h"
 #import "GPBExtensionRegistry.h"
+#import "GPBUnknownFieldSet.h"
+#import "GPBUnknownFields.h"
 
-@class GPBDescriptor;
 @class GPBCodedInputStream;
 @class GPBCodedOutputStream;
-@class GPBExtensionDescriptor;
-@class GPBFieldDescriptor;
 @class GPBUnknownFieldSet;
+@class GPBUnknownFields;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,7 +29,7 @@ extern NSString *const GPBMessageExceptionMessageTooLarge;
 CF_EXTERN_C_END
 
 @interface GPBMessage : NSObject <NSSecureCoding, NSCopying>
-@property(nonatomic, copy, nullable) GPBUnknownFieldSet *unknownFields;
+@property(nonatomic, copy, nullable) GPBUnknownFieldSet *unknownFields __attribute__((deprecated("Use GPBUnknownFields and the -initFromMessage: initializer and " "mergeUnknownFields:extensionRegistry:error: to add the data back to a message.")));
 @property(nonatomic, readonly, getter=isInitialized) BOOL initialized;
 + (instancetype)message;
 + (nullable instancetype)parseFromData:(NSData *)data error:(NSError **)errorPtr;
@@ -56,6 +59,8 @@ CF_EXTERN_C_END
 - (void)setExtension:(GPBExtensionDescriptor *)extension index:(NSUInteger)index value:(id)value;
 - (void)clearExtension:(GPBExtensionDescriptor *)extension;
 - (void)clear;
+- (void)clearUnknownFields;
+- (BOOL)mergeUnknownFields:(GPBUnknownFields *)unknownFields extensionRegistry:(nullable id<GPBExtensionRegistry>)extensionRegistry error:(NSError **)errorPtr;
 @end
 
 NS_ASSUME_NONNULL_END
