@@ -1,7 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@class GPBDescriptor;
-@class GPBExtensionDescriptor;
+#import "GPBDescriptor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -12,7 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 __attribute__((objc_subclassing_restricted))
 
 @interface GPBExtensionRegistry : NSObject <NSCopying, GPBExtensionRegistry>
-// - (void)addExtension:(id)extension
 - (void)addExtension:(GPBExtensionDescriptor *)extension;
 - (void)addExtensions:(GPBExtensionRegistry *)registry;
 @end
