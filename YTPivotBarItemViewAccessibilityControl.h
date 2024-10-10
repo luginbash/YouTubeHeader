@@ -1,4 +1,3 @@
-#import <UIKit/UIKit.h>
 #import "YTPivotBarItemView.h"
 
 @interface YTPivotBarItemViewAccessibilityControl : UIControl
