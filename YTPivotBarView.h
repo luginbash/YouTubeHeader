@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import "YTIPivotBarRenderer.h"
 
 @interface YTPivotBarView : UIView
 @property (nonatomic, assign, readonly) YTPivotBarView *root;
