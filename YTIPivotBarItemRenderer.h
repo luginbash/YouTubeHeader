@@ -7,6 +7,7 @@
 @interface YTIPivotBarItemRenderer : NSObject
 @property (nonatomic, copy, readwrite) NSString *pivotIdentifier;
 @property (nonatomic, copy, readwrite) NSString *targetId;
+@property (nonatomic, strong) NSArray *tabItems; // custom
 @property (nonatomic, strong, readwrite) YTICommand *navigationEndpoint;
 @property (nonatomic, strong, readwrite) YTICommand *onSelected;
 @property (nonatomic, strong, readwrite) YTICommand *onDeselected;
