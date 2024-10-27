@@ -10,6 +10,7 @@ typedef enum {
     YT_MEH = 91,
     YT_SAD = 92,
     YT_VERY_SAD = 93,
+    YT_DOWNLOADS_OUTLINE = 147,
     YT_LIKE = 160,
     YT_SWITCH_ACCOUNTS = 182,
     YT_FILTER = 193,
