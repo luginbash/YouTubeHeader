@@ -35,6 +35,8 @@ typedef enum {
     YT_GOOGLE = 498,
     YT_HELP_OUTLINE = 513,
     YT_TUNE = 530,
+    YT_DEFAULT_LOGO = 158, // Default Logo as seen in the Navigation Bar
+    YT_PREMIUM_LOGO = 537, // Premium Logo as seen in the Navigation Bar
     YT_TRANSLATE = 540,
     YT_ADD_SMALL = 560,
     YT_LOCK = 573,
