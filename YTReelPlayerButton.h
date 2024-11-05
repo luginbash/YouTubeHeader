@@ -1,4 +1,5 @@
 #import "YTQTMButton.h"
+#import "YTShortsPlayerViewController.h"
 
 @interface YTReelPlayerButton : YTQTMButton
 @property (nonatomic, assign, readwrite) NSInteger buttonAlignment;
