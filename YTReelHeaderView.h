@@ -13,9 +13,11 @@
 - (void)addLeftStackView:(id)view toView:(id)parentView;
 - (void)addRightStackView:(id)view toView:(id)parentView;
 - (void)setRightNavigationButtonsArray:(id)buttonsArray;
-- (id<YTReelHeaderDelegate>)delegate;
-- (void)setDelegate:(id<YTReelHeaderDelegate>)delegate;
 - (void)didPressVideoQuality:(id)arg;
-- (YTQTMButton *)buttonWithImage:(UIImage *)image accessibilityLabel:(NSString *)accessibilityLabel verticalContentPadding:(CGFloat)verticalContentPadding;
-- (YTQTMButton *)createButton:(NSString *)tweakId accessibilityLabel:(NSString *)accessibilityLabel selector:(SEL)selector;
+- (void)setContextualHeaderRenderer:(id)arg1;
+- (void)setElementRenderer:(id)arg1;
+- (void)addBackButton:(id)arg1 toStackView:(id)arg2;
+- (void)addPlaceholderView:(id)arg1 toStackView:(id)arg2;
+- (void)addRightSideButton:(id)arg1 toStackView:(id)arg2;
+- (void)addRightSideSearchBar:(id)arg1 toStackView:(id)arg2 withNavigationButtonCount:(int)arg3;
 @end
