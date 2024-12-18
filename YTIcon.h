@@ -21,6 +21,8 @@ typedef enum {
     YT_OPEN_IN_NEW = 240,
     YT_COPY = 250,
     YT_QUEUE_PLAY_NEXT = 251,
+    NOTIFICATIONS = 264, // Non-Outline
+    NOTIFICATIONS_NONE = 269, // Outline
     YT_EMOJI = 279,
     YT_LIKE_SELECTED = 301,
     YT_DISLIK_SELECTED = 302,
