@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import "YTPivotBarItemView.h"
 #import "YTIPivotBarRenderer.h"
 
 @interface YTPivotBarView : UIView
