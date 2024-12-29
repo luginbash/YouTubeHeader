@@ -7,4 +7,5 @@
 @property (nonatomic, strong, readwrite) YTIPivotBarIconOnlyItemRenderer *pivotBarIconOnlyItemRenderer;
 - (YTIPivotBarItemRenderer *)pivotBarItemRenderer;
 - (YTIPivotBarIconOnlyItemRenderer *)pivotBarIconOnlyItemRenderer;
+- (void)setPivotBarItemRenderer:(id);
 @end
