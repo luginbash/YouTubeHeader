@@ -13,8 +13,8 @@
 @property (nonatomic, strong, readwrite) YTPivotBarItemView *itemView5;
 @property (nonatomic, strong, readwrite) YTPivotBarItemView *itemView6;
 @property (nonatomic, assign, readonly) NSArray *itemViews;
-@property (nonatomic, strong, readwrite) <YTPageStyleProvider> *pageStyleProviderDelegate;
-@property (nonatomic, weak, readwrite) <YTPivotBarItemViewDelegate> *delegate;
+@property (nonatomic, strong, readwrite) id <YTPageStyleProvider> *pageStyleProviderDelegate;
+@property (nonatomic, weak, readwrite) id <YTPivotBarItemViewDelegate> *delegate;
 @property (nonatomic, strong, readwrite) YTIPivotBarRenderer *renderer;
 @property (nonatomic, assign, readonly) UIView *contentView;
 @property (nonatomic, strong, readwrite) UIView *scrubberView;
