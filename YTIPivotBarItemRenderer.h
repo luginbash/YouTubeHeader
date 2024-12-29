@@ -7,7 +7,6 @@
 @interface YTIPivotBarItemRenderer : NSObject
 @property (nonatomic, copy, readwrite) NSString *pivotIdentifier;
 @property (nonatomic, copy, readwrite) NSString *targetId;
-@property (nonatomic, strong) NSArray *tabItems; // custom
 @property (nonatomic, strong, readwrite) YTICommand *navigationEndpoint;
 @property (nonatomic, strong, readwrite) YTICommand *onSelected;
 @property (nonatomic, strong, readwrite) YTICommand *onDeselected;
@@ -24,4 +23,6 @@
 @property (nonatomic, strong, readwrite) YTIRenderer *progressIndicator;
 @property (nonatomic, assign, readwrite) BOOL isDisabled;
 @property (nonatomic, strong, readwrite) YTICommand *onLongPress;
+- (void)setPivotIdentifier:(id);
+- (void)setTitle:(id);
 @end
