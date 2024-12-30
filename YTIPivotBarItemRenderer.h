@@ -23,6 +23,4 @@
 @property (nonatomic, strong, readwrite) YTIRenderer *progressIndicator;
 @property (nonatomic, assign, readwrite) BOOL isDisabled;
 @property (nonatomic, strong, readwrite) YTICommand *onLongPress;
-- (void)setPivotIdentifier:(id);
-- (void)setTitle:(id);
 @end
