@@ -23,4 +23,5 @@
 - (void)setChapters:(NSArray *)chapters;
 - (void)didPressScrubber:(id)arg1;
 - (CGFloat)scrubRangeForScrubX:(CGFloat)arg1;
+- (void)hideFullscreenButton;
 @end
