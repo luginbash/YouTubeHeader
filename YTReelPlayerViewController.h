@@ -8,5 +8,6 @@
 - (id <YTVideoPlayerOverlayDelegate>)delegate;
 - (void)didPressVideoQuality:(id)arg;
 - (YTReelContentView *)contentView;
+- (YTSingleVideoController *)currentVideo;
 - (NSString *)videoId;
 @end
