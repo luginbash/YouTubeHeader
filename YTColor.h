@@ -11,4 +11,5 @@
 + (UIColor *)black2;
 + (UIColor *)black3;
 + (UIColor *)black4;
++ (UIColor *)youTubeRed;
 @end
