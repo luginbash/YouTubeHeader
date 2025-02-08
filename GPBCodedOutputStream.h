@@ -4,9 +4,6 @@
 #import "GPBWireFormat.h"
 
 #import "GPBArray.h"
-#import "GPBUnknownFieldSet.h"
-
-@class GPBUnknownFieldSet;
 
 NS_ASSUME_NONNULL_BEGIN
 
