@@ -4,12 +4,10 @@
 #import "GPBCodedOutputStream.h"
 #import "GPBDescriptor.h"
 #import "GPBExtensionRegistry.h"
-#import "GPBUnknownFieldSet.h"
 #import "GPBUnknownFields.h"
 
 @class GPBCodedInputStream;
 @class GPBCodedOutputStream;
-@class GPBUnknownFieldSet;
 @class GPBUnknownFields;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -29,7 +27,6 @@ extern NSString *const GPBMessageExceptionMessageTooLarge;
 CF_EXTERN_C_END
 
 @interface GPBMessage : NSObject <NSSecureCoding, NSCopying>
-@property(nonatomic, copy, nullable) GPBUnknownFieldSet *unknownFields __attribute__((deprecated("Use GPBUnknownFields and the -initFromMessage: initializer and " "mergeUnknownFields:extensionRegistry:error: to add the data back to a message.")));
 @property(nonatomic, readonly, getter=isInitialized) BOOL initialized;
 + (instancetype)message;
 + (nullable instancetype)parseFromData:(NSData *)data error:(NSError **)errorPtr;
@@ -39,7 +36,6 @@ CF_EXTERN_C_END
 - (nullable instancetype)initWithData:(NSData *)data error:(NSError **)errorPtr;
 - (nullable instancetype)initWithData:(NSData *)data extensionRegistry:(nullable id<GPBExtensionRegistry>)extensionRegistry error:(NSError **)errorPtr;
 - (nullable instancetype)initWithCodedInputStream:(GPBCodedInputStream *)input extensionRegistry: (nullable id<GPBExtensionRegistry>)extensionRegistry error:(NSError **)errorPtr;
-- (void)mergeFromData:(NSData *)data extensionRegistry:(nullable id<GPBExtensionRegistry>)extensionRegistry __attribute__((deprecated("Use -mergeFromData:extensionRegistry:error: instead, especaily if calling from Swift.")));
 - (BOOL)mergeFromData:(NSData *)data extensionRegistry:(nullable id<GPBExtensionRegistry>)extensionRegistry error:(NSError **)errorPtr;
 - (void)mergeFrom:(GPBMessage *)other;
 - (void)writeToCodedOutputStream:(GPBCodedOutputStream *)output;
