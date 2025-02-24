@@ -1,4 +1,4 @@
-#import "GPBExtensionDescriptor.h"
+#import "GPBDescriptor.h"
 #import "YTIEngagementPanelIdentifier.h"
 
 @interface YTIShowEngagementPanelEndpoint : NSObject
