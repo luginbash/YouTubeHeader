@@ -36,6 +36,8 @@ CF_EXTERN_C_END
 - (nullable instancetype)initWithData:(NSData *)data error:(NSError **)errorPtr;
 - (nullable instancetype)initWithData:(NSData *)data extensionRegistry:(nullable id<GPBExtensionRegistry>)extensionRegistry error:(NSError **)errorPtr;
 - (nullable instancetype)initWithCodedInputStream:(GPBCodedInputStream *)input extensionRegistry: (nullable id<GPBExtensionRegistry>)extensionRegistry error:(NSError **)errorPtr;
+- (instancetype)messageForFieldNumber:(NSUInteger)fieldNumber;
+- (instancetype)messageForFieldNumber:(NSUInteger)fieldNumber messageClass:(Class)messageClass;
 - (BOOL)mergeFromData:(NSData *)data extensionRegistry:(nullable id<GPBExtensionRegistry>)extensionRegistry error:(NSError **)errorPtr;
 - (void)mergeFrom:(GPBMessage *)other;
 - (void)writeToCodedOutputStream:(GPBCodedOutputStream *)output;
