@@ -10,4 +10,6 @@
 @property (nonatomic, assign, readwrite) BOOL hasServiceEndpoint;
 @property (nonatomic, assign, readwrite) int visibilityConditionType;
 @property (nonatomic, assign, readwrite) BOOL hasVisibilityConditionType;
+@property (nonatomic, strong, readwrite) YTIFormattedString *text;
+@property (nonatomic, assign, readwrite) BOOL hasText;
 @end
