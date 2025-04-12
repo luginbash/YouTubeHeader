@@ -24,6 +24,7 @@ __attribute__((objc_subclassing_restricted))
 @property(nonatomic, readonly, assign) uint32_t fixed32;
 @property(nonatomic, readonly, assign) uint64_t fixed64;
 @property(nonatomic, readonly, strong, nonnull) NSData *lengthDelimited;
+@property (nonatomic, readonly, strong) NSArray <NSData *> *lengthDelimitedList;
 @property(nonatomic, readonly, strong, nonnull) GPBUnknownFields *group;
 
 @end
