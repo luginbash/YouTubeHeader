@@ -3,10 +3,12 @@
 #import "YTIAccessibilitySupportedDatas.h"
 #import "YTIIcon.h"
 #import "YTIRenderer.h"
+#import "YTIThumbnailDetails.h"
 
 @interface YTIPivotBarItemRenderer : NSObject
 @property (nonatomic, copy, readwrite) NSString *pivotIdentifier;
 @property (nonatomic, copy, readwrite) NSString *targetId;
+@property (nonatomic, strong, readwrite) YTIThumbnailDetails *thumbnail;
 @property (nonatomic, strong, readwrite) YTICommand *navigationEndpoint;
 @property (nonatomic, strong, readwrite) YTICommand *onSelected;
 @property (nonatomic, strong, readwrite) YTICommand *onDeselected;
