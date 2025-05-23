@@ -1,4 +1,5 @@
 #import "YTICommand.h"
+#import "YTIFormattedString.h"
 #import "YTIIcon.h"
 
 @interface YTIMenuConditionalServiceItemRenderer : GPBMessage

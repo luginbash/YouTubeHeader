@@ -1,4 +1,4 @@
-#import <Foundation/Foundation.h>
+#import "GPBExtensionDescriptor.h"
 
 #import "GPBDescriptor.h"
 
